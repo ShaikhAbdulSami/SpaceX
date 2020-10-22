@@ -1,5 +1,6 @@
 import  React from 'react';
 import './App.css';
+import './index.css'
 import LaunchContainer from './components/Launches/index';
 import LaunchDetailsContainer from './components/LaunchDetails/index';
 import { BrowserRouter as Router,  Route, Routes } from 'react-router-dom'

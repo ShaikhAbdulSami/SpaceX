@@ -1,4 +1,4 @@
-import  React, {useEffect} from 'react'
+import  React from 'react'
 import { useLaunchInfoQuery } from '../../generated/graphql'
 import LaunchDetails from './launchdetails'
 import { useParams } from 'react-router-dom'

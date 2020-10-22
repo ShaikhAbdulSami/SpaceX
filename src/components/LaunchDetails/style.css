@@ -1,37 +1,61 @@
-.LaunchDetails {
-    height: 100vh;
-    max-height: 100%;
-    width: calc(100vw - 300px);
-    overflow: hidden auto;
-    padding-left: 20px;
-    padding-right: 20px;
+.box-item{
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  max-width: 980px;
+  min-height: 500px;
+  border-radius: 20px;
+}
+.item-mission{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.item-mission span{
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.item-site {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+.item-site span{
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.sp-3{
+  color: black;
+}
+.item-p{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 20px;    
+}
+.item-p p {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.btn{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 20px;        
+}
+.img-item{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.img-item div{
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+@media(max-width:1000px){
+  .box-item{
+  border-radius: 0;   
   }
-  
-  .LaunchDetailsStatus {
-    margin-top: 40px;
-  }
-  
-  .LaunchDetailsTitle {
-    margin-top: 0;
-    margin-bottom: 4px;
-  }
-  
-  .LaunchDetailsSuccess {
-    color: #2cb84b;
-  }
-  
-  .LaunchDetailsFailed {
-    color: #ff695e;
-  }
-  
-  .LaunchDetailsImage-list {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 40px;
-    padding-bottom: 100px;
-  }
-  
-  .LaunchDetailsImage {
-    width: 100%;
-  }
+}
