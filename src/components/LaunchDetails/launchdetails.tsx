@@ -29,20 +29,32 @@ const LaunchDetails: React.FC<Props> = ({ data }) => {
                         <span className='sp-one'>Rocket: </span><span className='sp-3'>{data.launch?.rocket?.rocket_name}</span>
                     </div>
                     <hr /> 
+                    <div className='item-site'>
+                        <span className='sp-one'>Rocket Type: </span><span className='sp-3'>{data.launch?.rocket?.rocket_type}</span>
+                    </div>
+                    <hr /> 
                 </div>
-                <div className='item-p'>
-                    <p>{data.launch?.details}</p>
+                <div className='item-site'>
+                <span className='sp-one'>Detail: </span><p className='sp-3'>{data.launch?.details}</p>
                 </div>
                 <hr />
                 {
                     !!data.launch?.links && !!data.launch.links.flickr_images && (
                         <div className='img-item'>
+                            <div className='item-site'>
+                                <span className='sp-one'>Images: </span>
+                                <hr />
+                            </div>
                             {data.launch.links.flickr_images.map((image, i) =>
                                 image ? <div key={i}><img src={image}  height='300px' width="300px" alt={i.toString()} /></div> : null
                             )}
                         </div>
                     )
                 }
+                <hr /> 
+                <div className='item-site'>
+                    <span className='sp-one'>Video Link: </span><p>{data.launch?.links?.video_link}</p>
+                </div>
                 <hr />
                 <div className='launch-btu'>
                         <Link to='/'>

@@ -7,7 +7,7 @@ const LaunchContainer = () => {
     const { data , error , loading } = useLaunchesQuery();
 
     if(loading){
-        return <div>Loading...</div>
+        return <div className="loading">Loading...</div>
     }
     
     if(error || !data){

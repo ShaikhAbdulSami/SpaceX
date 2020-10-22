@@ -13,7 +13,11 @@
     flex-direction: column;
 }
 .main{
-    background-color: black;
+    background-color:black;
     min-height: 100vh;
     padding-bottom: 20px;
+}
+.main h1{
+    text-align: center;
+    text-transform: uppercase;
 }

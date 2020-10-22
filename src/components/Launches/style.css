@@ -1,5 +1,5 @@
 .true{
-  color: green;
+  color:#00ff00;
 }
 .false{
   color: red;
@@ -19,7 +19,7 @@
   min-height: 200px;
   width: 350px;
   border-radius: 10px;
-  background-color: #F5F5F5;
+  background-color:#003d99;
 }
 .launch-margin{
   margin-top: 20px;
@@ -45,20 +45,20 @@
   text-transform: uppercase;
 }
 .sp-two{
-  color: #0091EA;
+  color: #cccc00;
 }
 .launch-site{
   margin-bottom: 5px;
 }
 .launch-site span{
   font-size: 16px;
-  color: black;
+  color: white;
   font-weight: 400;
   letter-spacing: .5px;
   text-transform: uppercase;
 }
 .sp-one{
-  color: #212121 !important;
+  color: white !important;
 }
 .launch-status{
   margin-bottom: 5px;
@@ -83,11 +83,14 @@
   outline: none;
 }
 .launch-btu span{
-  color: black;
+  color: white;
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   text-transform: uppercase;
+}
+.loading{
+  text-align: center;
 }
 @media(max-width:500px){
   .display-div-launch{

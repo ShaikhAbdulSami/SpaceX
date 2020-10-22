@@ -25,6 +25,9 @@ const Launch: React.FC<Props> = ({ data }) => {
                         <span className='sp-one'>LaunchSite: </span><span>{launch?.launch_site?.site_name}</span>
                     </div>
                     <div className='launch-site'>
+                        <span className='sp-one'>DateTime: </span><span>{launch?.launch_date_local}</span>
+                    </div>
+                    <div className='launch-site'>
                         <span className='sp-one'>Launch year: </span><span>{launch?.launch_year}</span>
                     </div>
                     <div className='launch-status'>
@@ -33,7 +36,7 @@ const Launch: React.FC<Props> = ({ data }) => {
                     <div className='launch-btu'>
                         <Link to={`launch/${launch?.flight_number}`}>
                             <button className='hvr-bounce-to-bottom launch-btn'>
-                                <span>details</span>
+                                <span>Learn More</span>
                             </button>
                         </Link>
                     </div>
@@ -46,7 +49,8 @@ const Launch: React.FC<Props> = ({ data }) => {
     return (
         <div className='display-div-launch'>
             <div className='heading-space'>
-                <h1>Launches</h1>
+                <br />
+                <h2>LAUNCHES</h2>
             </div>
             <div className='display-data-launch'>
                 {displayData}
