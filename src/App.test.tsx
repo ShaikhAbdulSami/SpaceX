@@ -1,9 +1,13 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from 'react'
+import {mount, shallow} from 'enzyme'
+import App from './App'
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+describe('Render App Component' , ()=>{
+   const container = shallow(<App/>);
+
+   it('Should Render a Div' , ()=>{
+   
+    expect(container.find('div').length).toBeGreaterThanOrEqual(1);
+  })
+})
